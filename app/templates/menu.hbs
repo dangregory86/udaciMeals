@@ -1,0 +1,13 @@
+<h1>Who's hungry?</h1>
+
+{{!-- first get then model --}}
+{{log model}}
+<ul class="items-container list-inline">
+  {{!-- for each model item --}}
+  {{#each model as |item|}}
+    {{menu-item item=item}}
+  {{/each}}
+</ul>
+
+
+{{outlet}}
